@@ -5,51 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanka Cornelius - Portfolio</title>
     <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default styles for a cleaner layout */
+        body, h1, h2, p {
             margin: 0;
             padding: 0;
+        }
+
+        /* Center the entire content on the page */
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure full viewport height */
             background-color: #f4f4f4;
         }
+
+        /* Style the header */
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
+
+        /* Style the content container */
         .container {
             max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
-        }
-        h1 {
-            font-size: 36px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .project {
-            display: flex;
-            align-items: center; /* Vertically center align items */
             background-color: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
 
-        .project-description {
-            flex: 1; /* Expand to fill available space */
-            padding-right: 20px; /* Add some spacing between description and image */
+        /* Style project rows */
+        .project {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
         }
 
-        .project-image {
-            flex-shrink: 0; /* Don't allow the image to shrink */
+        /* Style project image to fit the column width */
+        .project-image img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -58,19 +58,20 @@
         <h1>Priyanka Cornelius</h1>
         <p>Frontend Developer Portfolio</p>
     </header>
-    <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Results-oriented and highly skilled Frontend Developer with a passion for creating exceptional user experiences. Adept at translating design concepts into interactive and responsive web applications. Eager to contribute expertise to innovative projects.
-            </p>
-        </section>
+    <div class="centered-container">
+        <div class="container">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Results-oriented and highly skilled Frontend Developer with a passion for creating exceptional user experiences. Adept at translating design concepts into interactive and responsive web applications. Eager to contribute expertise to innovative projects.
+                </p>
+            </section>
 
-        <section>
-            <h2>Projects</h2>
+            <section>
+                <h2>Projects</h2>
 
-            <!-- Project Row 1 -->
-            <div class="project">
+                <!-- Project Row 1 -->
+                <div class="project">
                 <div class="project-description">
                     <h3>Property Management</h3>
                     <p>
@@ -91,24 +92,24 @@
                     <img src="property_management_image.jpg" alt="Property Management Screenshot">
                 </div>
             </div>
-
-            <div class="project">
-                <div class="project-description">
-                    <h3>UberEATS Prototype</h3>
-                    <ul>
-                        <li>Created an end-to-end replica of Uber Eats website for restaurant and customer personas with features to select restaurants and dishes based on preference filters, editable cart, order updates and cancellations, receipt generation etc.</li>
-                        <li>Implemented Redux in frontend components for consistent state management resulting in a 40% reduction in state-related bugs, Pagination on Orders based on user selection of page size for easy order tracking and JWT Token for user authentication.</li>
-                        <li>Reduced latency using MongoDB connection pool and SQL indexing, Redis cache in frequently accessed components and Integrated Kafka messaging queue to enhance efficiency by 30%.</li>
-                        <li>Containerized UberEATS prototype app using Docker and implemented CI/CD workflows with GitHub Actions for seamless deployment on Amazon EKS cluster, optimizing resource efficiency and scalability. Successfully tested with 10k concurrent users.</li>
-                    </ul>
-                    <p>Technologies used: React, Node.js, MongoDB, MySQL, AWS, Kafka, Redux, Redis</p>
+                
+                <div class="project">
+                    <div class="project-description">
+                        <h3>UberEATS Prototype</h3>
+                        <p>
+                            Created an end-to-end replica of Uber Eats website for restaurant and customer personas with features to select restaurants and dishes based on preference filters, editable cart, order updates and cancellations, receipt generation, etc.
+                        </p>
+                        <p>Technologies: React, Node.js, MongoDB, MySQL, AWS, Kafka, Redux, Redis</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://github.com/PriyankaCornelius/PriyankaCornelius.github.io/raw/master/media/UberEatsOutput.gif" alt="UberEATS Prototype GIF">
+                    </div>
                 </div>
-                <div class="project-image">
-                    <img src="https://raw.githubusercontent.com/PriyankaCornelius/PriyankaCornelius.github.io/master/media/UberEatsOutput.gif" alt="UberEATS Prototype GIF" style="max-width: 100%;">
-                </div>
-            </div>
 
-        </section>
+                <!-- Add more project rows as needed -->
+
+            </section>
+        </div>
     </div>
 </body>
 </html>
