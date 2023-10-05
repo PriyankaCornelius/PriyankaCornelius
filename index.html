@@ -1,1 +1,98 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Cornelius - Portfolio</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .project {
+            display: flex;
+            align-items: center; /* Vertically center align items */
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-description {
+            flex: 1; /* Expand to fill available space */
+            padding-right: 20px; /* Add some spacing between description and image */
+        }
+
+        .project-image {
+            flex-shrink: 0; /* Don't allow the image to shrink */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Priyanka Cornelius</h1>
+        <p>Frontend Developer Portfolio</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Results-oriented and highly skilled Frontend Developer with a passion for creating exceptional user experiences. Adept at translating design concepts into interactive and responsive web applications. Eager to contribute expertise to innovative projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <!-- Project Row 1 -->
+            <div class="project">
+    <div class="project-description">
+        <h3>Property Management</h3>
+        <p>
+            A comprehensive Property Management platform designed to streamline operations for property managers, owners, maintenance personnel, and tenants.
+            As a frontend developer, I crafted the user interface using React.js and Material UI, creating a seamless experience.
+            I implemented role-based navigation to ensure each user persona can efficiently access their relevant data and tasks.
+        </p>
+        <h4>Key Features:</h4>
+        <ul>
+            <li>Owners can track rent payments, manage properties, and view financial data.</li>
+            <li>Property managers oversee clients, owners, renters, and maintenance requests, with an intuitive graphical view of owner satisfaction.</li>
+            <li>Renters and tenants can explore new properties, manage maintenance requests, pay rent, and access documents effortlessly.</li>
+            <li>Maintenance personnel efficiently handle quote requests, complete tickets, generate invoices, and track past jobs and schedules.</li>
+        </ul>
+        <p>Technologies used: React.js, Material UI, Python, SQL, REST API</p>
+    </div>
+    <div class="project-image">
+        <img src="property_management_image.jpg" alt="Property Management Screenshot">
+    </div>
+</div>
+
+        </section>
+    </div>
+</body>
+</html>
